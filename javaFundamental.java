@@ -208,45 +208,110 @@ public class javaFundamental {
 
 
 
-// 1. Addition
-        int a = 10;
+// // 1. Addition
+//         int a = 10;
+//         int b = 20;
+//         int sum = a + b;
+//         System.out.println("Addition:");
+//         System.out.println(a + " + " + b + " = " + sum);
+
+//         // 2. Subtraction
+//         int diff = b - a;
+//         System.out.println("\nSubtraction:");
+//         System.out.println(b + " - " + a + " = " + diff);
+
+//         // 3. Multiplication
+//         int product = a * b;
+//         System.out.println("\nMultiplication:");
+//         System.out.println(a + " * " + b + " = " + product);
+
+//         // 4. Division
+//         int quotient = b / a;   // Integer division
+//         System.out.println("\nDivision:");
+//         System.out.println(b + " / " + a + " = " + quotient);
+
+//         double preciseQuotient = (double) b / a; // For decimal result
+//         System.out.println("Precise division (double): " + b + " / " + a + " = " + preciseQuotient);
+
+//         // 5. Modulus (remainder)
+//         int remainder = b % a;
+//         System.out.println("\nModulus:");
+//         System.out.println(b + " % " + a + " = " + remainder);
+
+//         // 6. Increment and Decrement
+//         int x = 5;
+//         System.out.println("\nIncrement and Decrement:");
+//         System.out.println("Original x = " + x);
+//         System.out.println("x++ = " + (x++));  // Post-increment
+//         System.out.println("After x++ , x = " + x);
+//         System.out.println("++x = " + (++x));  // Pre-increment
+//         System.out.println("x-- = " + (x--));  // Post-decrement
+//         System.out.println("--x = " + (--x));  // Pre-decrement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * RelationalOperators.java
+ * ------------------------
+ * This program demonstrates relational operators in Java.
+ * Relational operators are used to compare two values and return a boolean (true/false).
+ *
+ * Relational operators:
+ * 1. Equal to (==)
+ * 2. Not equal to (!=)
+ * 3. Greater than (>)
+ * 4. Less than (<)
+ * 5. Greater than or equal to (>=)
+ * 6. Less than or equal to (<=)
+ */
+
+
+
+
+
+
+
+
+ int a = 10;
         int b = 20;
-        int sum = a + b;
-        System.out.println("Addition:");
-        System.out.println(a + " + " + b + " = " + sum);
 
-        // 2. Subtraction
-        int diff = b - a;
-        System.out.println("\nSubtraction:");
-        System.out.println(b + " - " + a + " = " + diff);
+        // 1. Equal to
+        boolean isEqual = (a == b);
+        System.out.println("Equal to (==): " + a + " == " + b + " → " + isEqual);
 
-        // 3. Multiplication
-        int product = a * b;
-        System.out.println("\nMultiplication:");
-        System.out.println(a + " * " + b + " = " + product);
+        // 2. Not equal to
+        boolean isNotEqual = (a != b);
+        System.out.println("Not equal to (!=): " + a + " != " + b + " → " + isNotEqual);
 
-        // 4. Division
-        int quotient = b / a;   // Integer division
-        System.out.println("\nDivision:");
-        System.out.println(b + " / " + a + " = " + quotient);
+        // 3. Greater than
+        boolean isGreater = (a > b);
+        System.out.println("Greater than (>): " + a + " > " + b + " → " + isGreater);
 
-        double preciseQuotient = (double) b / a; // For decimal result
-        System.out.println("Precise division (double): " + b + " / " + a + " = " + preciseQuotient);
+        // 4. Less than
+        boolean isLess = (a < b);
+        System.out.println("Less than (<): " + a + " < " + b + " → " + isLess);
 
-        // 5. Modulus (remainder)
-        int remainder = b % a;
-        System.out.println("\nModulus:");
-        System.out.println(b + " % " + a + " = " + remainder);
+        // 5. Greater than or equal to
+        boolean isGreaterOrEqual = (a >= b);
+        System.out.println("Greater than or equal to (>=): " + a + " >= " + b + " → " + isGreaterOrEqual);
 
-        // 6. Increment and Decrement
-        int x = 5;
-        System.out.println("\nIncrement and Decrement:");
-        System.out.println("Original x = " + x);
-        System.out.println("x++ = " + (x++));  // Post-increment
-        System.out.println("After x++ , x = " + x);
-        System.out.println("++x = " + (++x));  // Pre-increment
-        System.out.println("x-- = " + (x--));  // Post-decrement
-        System.out.println("--x = " + (--x));  // Pre-decrement
+        // 6. Less than or equal to
+        boolean isLessOrEqual = (a <= b);
+        System.out.println("Less than or equal to (<=): " + a + " <= " + b + " → " + isLessOrEqual);
+
+
+
 
 
 
