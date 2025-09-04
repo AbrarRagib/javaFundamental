@@ -412,41 +412,62 @@ public class javaFundamental {
 
 
 
- int num = 15;
+//  int num = 15;
 
-        // 1. Simple if
-        if (num > 10) {
-            System.out.println("Number is greater than 10");
-        }
+//         // 1. Simple if
+//         if (num > 10) {
+//             System.out.println("Number is greater than 10");
+//         }
 
-        // 2. if-else
-        if (num % 2 == 0) {
-            System.out.println("Number is even");
-        } else {
-            System.out.println("Number is odd");
-        }
+//         // 2. if-else
+//         if (num % 2 == 0) {
+//             System.out.println("Number is even");
+//         } else {
+//             System.out.println("Number is odd");
+//         }
 
-        // 3. if-else-if ladder
-        if (num < 0) {
-            System.out.println("Number is negative");
-        } else if (num == 0) {
-            System.out.println("Number is zero");
-        } else if (num > 0 && num <= 10) {
-            System.out.println("Number is positive and less than or equal to 10");
-        } else {
-            System.out.println("Number is positive and greater than 10");
-        }
+//         // 3. if-else-if ladder
+//         if (num < 0) {
+//             System.out.println("Number is negative");
+//         } else if (num == 0) {
+//             System.out.println("Number is zero");
+//         } else if (num > 0 && num <= 10) {
+//             System.out.println("Number is positive and less than or equal to 10");
+//         } else {
+//             System.out.println("Number is positive and greater than 10");
+//         }
 
-        // 4. Nested if
-        int a = 20, b = 30;
-        if (a > 10) {
-            if (b > 25) {
-                System.out.println("a is greater than 10 and b is greater than 25");
-            }
-        }
+//         // 4. Nested if
+//         int a = 20, b = 30;
+//         if (a > 10) {
+//             if (b > 25) {
+//                 System.out.println("a is greater than 10 and b is greater than 25");
+//             }
+//         }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int a = 10;
+// int b = 20;
+
+// if (a > b) {
+//     System.out.println("A is greater than B");
+// } else { 
+//     System.out.println("B is greater than A");
+// }
 
 
 
