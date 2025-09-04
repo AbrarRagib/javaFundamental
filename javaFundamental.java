@@ -529,29 +529,29 @@ public class javaFundamental {
 
 
 
-// Example 1: Simple number check
-        int num = 10;
-        String result = (num % 2 == 0) ? "Even" : "Odd"; 
-        System.out.println(num + " is " + result);
+// // Example 1: Simple number check
+//         int num = 10;
+//         String result = (num % 2 == 0) ? "Even" : "Odd"; 
+//         System.out.println(num + " is " + result);
 
-        // Example 2: Finding the maximum of two numbers
-        int a = 15, b = 20;
-        int max = (a > b) ? a : b;
-        System.out.println("Maximum: " + max);
+//         // Example 2: Finding the maximum of two numbers
+//         int a = 15, b = 20;
+//         int max = (a > b) ? a : b;
+//         System.out.println("Maximum: " + max);
 
-        // Example 3: Nested ternary (for multiple conditions)
-        int marks = 85;
-        String grade = (marks >= 90) ? "A+"
-                        : (marks >= 75) ? "A"
-                        : (marks >= 60) ? "B"
-                        : (marks >= 50) ? "C"
-                        : "F";
-        System.out.println("Marks: " + marks + " → Grade: " + grade);
+//         // Example 3: Nested ternary (for multiple conditions)
+//         int marks = 85;
+//         String grade = (marks >= 90) ? "A+"
+//                         : (marks >= 75) ? "A"
+//                         : (marks >= 60) ? "B"
+//                         : (marks >= 50) ? "C"
+//                         : "F";
+//         System.out.println("Marks: " + marks + " → Grade: " + grade);
 
-        // Example 4: Checking positive, negative, or zero
-        int value = -5;
-        String check = (value > 0) ? "Positive" : (value == 0 ? "Zero" : "Negative");
-        System.out.println("Value " + value + " is " + check);
+//         // Example 4: Checking positive, negative, or zero
+//         int value = -5;
+//         String check = (value > 0) ? "Positive" : (value == 0 ? "Zero" : "Negative");
+//         System.out.println("Value " + value + " is " + check);
 
  
 
@@ -562,6 +562,102 @@ public class javaFundamental {
 
 
 
+
+
+
+/**
+ * SwitchStatementExample.java
+ * ---------------------------
+ * The switch statement in Java is used to execute one block of code 
+ * among many options, based on the value of a variable/expression.
+ *
+ * Syntax:
+ *      switch (expression) {
+ *          case value1:
+ *              // code block
+ *              break;
+ *          case value2:
+ *              // code block
+ *              break;
+ *          ...
+ *          default:
+ *              // code block if no case matches
+ *      }
+ */
+
+
+
+
+
+
+
+
+ int day = 3; // 1 = Monday, 2 = Tuesday, etc.
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid day number!");
+        }
+
+        System.out.println("----------------------------------");
+
+        // Example 2: Switch with Strings
+        String fruit = "Mango";
+        switch (fruit) {
+            case "Apple":
+                System.out.println("Red fruit");
+                break;
+            case "Banana":
+                System.out.println("Yellow fruit");
+                break;
+            case "Mango":
+                System.out.println("King of fruits");
+                break;
+            default:
+                System.out.println("Unknown fruit");
+        }
+
+        System.out.println("----------------------------------");
+
+        // Example 3: Multiple cases together
+        char grade = 'B';
+        switch (grade) {
+            case 'A':
+            case 'B':
+                System.out.println("Excellent performance!");
+                break;
+            case 'C':
+                System.out.println("Good effort!");
+                break;
+            case 'D':
+                System.out.println("Needs improvement.");
+                break;
+            case 'F':
+                System.out.println("Failed.");
+                break;
+            default:
+                System.out.println("Invalid grade!");
+        }
 
 
 
