@@ -116,51 +116,51 @@ public class javaFundamental {
 
 
 
-// 1. Widening Conversion (Implicit)
-        // Small data type converted automatically to larger data type
-        int intVal = 100;
-        double doubleVal = intVal;  // int → double automatically
-        System.out.println("Widening Conversion:");
-        System.out.println("int value: " + intVal);
-        System.out.println("Converted to double: " + doubleVal);
+// // 1. Widening Conversion (Implicit)
+//         // Small data type converted automatically to larger data type
+//         int intVal = 100;
+//         double doubleVal = intVal;  // int → double automatically
+//         System.out.println("Widening Conversion:");
+//         System.out.println("int value: " + intVal);
+//         System.out.println("Converted to double: " + doubleVal);
 
-        System.out.println("---------------------------------");
+//         System.out.println("---------------------------------");
 
-        // 2. Narrowing Conversion (Explicit / Casting)
-        // Large data type converted to smaller data type using cast
-        double doubleNum = 9.78;
-        int intNum = (int) doubleNum; // double → int (fraction lost)
-        System.out.println("Narrowing Conversion:");
-        System.out.println("double value: " + doubleNum);
-        System.out.println("Converted to int: " + intNum);
+//         // 2. Narrowing Conversion (Explicit / Casting)
+//         // Large data type converted to smaller data type using cast
+//         double doubleNum = 9.78;
+//         int intNum = (int) doubleNum; // double → int (fraction lost)
+//         System.out.println("Narrowing Conversion:");
+//         System.out.println("double value: " + doubleNum);
+//         System.out.println("Converted to int: " + intNum);
 
-        System.out.println("---------------------------------");
+//         System.out.println("---------------------------------");
 
-        // 3. Conversion between Strings and numbers
-        String strNum = "50";
-        int parsedInt = Integer.parseInt(strNum);   // String → int
-        double parsedDouble = Double.parseDouble("3.14"); // String → double
-        System.out.println("String to Number Conversion:");
-        System.out.println("String: " + strNum + ", Converted to int: " + parsedInt);
-        System.out.println("String: 3.14, Converted to double: " + parsedDouble);
+//         // 3. Conversion between Strings and numbers
+//         String strNum = "50";
+//         int parsedInt = Integer.parseInt(strNum);   // String → int
+//         double parsedDouble = Double.parseDouble("3.14"); // String → double
+//         System.out.println("String to Number Conversion:");
+//         System.out.println("String: " + strNum + ", Converted to int: " + parsedInt);
+//         System.out.println("String: 3.14, Converted to double: " + parsedDouble);
 
-        // Number → String conversion
-        int num = 25;
-        String numStr = Integer.toString(num);      // int → String
-        double dbl = 7.89;
-        String dblStr = Double.toString(dbl);      // double → String
-        System.out.println("Number to String Conversion:");
-        System.out.println("int 25 → String: " + numStr);
-        System.out.println("double 7.89 → String: " + dblStr);
+//         // Number → String conversion
+//         int num = 25;
+//         String numStr = Integer.toString(num);      // int → String
+//         double dbl = 7.89;
+//         String dblStr = Double.toString(dbl);      // double → String
+//         System.out.println("Number to String Conversion:");
+//         System.out.println("int 25 → String: " + numStr);
+//         System.out.println("double 7.89 → String: " + dblStr);
 
-        System.out.println("---------------------------------");
+//         System.out.println("---------------------------------");
 
-        // 4. Automatic Type Promotion in Expressions
-        byte a = 10;
-        byte b = 20;
-        int sum = a + b; // byte + byte → int automatically
-        System.out.println("Automatic Type Promotion in Expressions:");
-        System.out.println("byte a + byte b = " + sum);
+//         // 4. Automatic Type Promotion in Expressions
+//         byte a = 10;
+//         byte b = 20;
+//         int sum = a + b; // byte + byte → int automatically
+//         System.out.println("Automatic Type Promotion in Expressions:");
+//         System.out.println("byte a + byte b = " + sum);
 
 
 
