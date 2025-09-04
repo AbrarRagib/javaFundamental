@@ -447,34 +447,34 @@ public class javaFundamental {
 
 
 
-//if Else if
- int num = 75;
+// //if Else if
+//  int num = 75;
 
-        // Check the grade based on marks
-        if (num >= 90) {
-            System.out.println("Grade: A+");
-        } else if (num >= 80) {
-            System.out.println("Grade: A");
-        } else if (num >= 70) {
-            System.out.println("Grade: B");
-        } else if (num >= 60) {
-            System.out.println("Grade: C");
-        } else if (num >= 50) {
-            System.out.println("Grade: D");
-        } else {
-            System.out.println("Grade: F");
-        }
+//         // Check the grade based on marks
+//         if (num >= 90) {
+//             System.out.println("Grade: A+");
+//         } else if (num >= 80) {
+//             System.out.println("Grade: A");
+//         } else if (num >= 70) {
+//             System.out.println("Grade: B");
+//         } else if (num >= 60) {
+//             System.out.println("Grade: C");
+//         } else if (num >= 50) {
+//             System.out.println("Grade: D");
+//         } else {
+//             System.out.println("Grade: F");
+//         }
 
-        // Example with negative or zero check
-        int value = -10;
+//         // Example with negative or zero check
+//         int value = -10;
 
-        if (value > 0) {
-            System.out.println("Value is positive");
-        } else if (value == 0) {
-            System.out.println("Value is zero");
-        } else {
-            System.out.println("Value is negative");
-        }
+//         if (value > 0) {
+//             System.out.println("Value is positive");
+//         } else if (value == 0) {
+//             System.out.println("Value is zero");
+//         } else {
+//             System.out.println("Value is negative");
+//         }
 
 
 
@@ -515,6 +515,13 @@ public class javaFundamental {
 
 
 
+/**
+ * TernaryOperatorExample.java
+ * ---------------------------
+ * The ternary operator in Java is a shorthand for if-else statements.
+ * Syntax:
+ *      variable = (condition) ? expression_if_true : expression_if_false;
+ */
 
 
 
@@ -522,8 +529,29 @@ public class javaFundamental {
 
 
 
+// Example 1: Simple number check
+        int num = 10;
+        String result = (num % 2 == 0) ? "Even" : "Odd"; 
+        System.out.println(num + " is " + result);
 
+        // Example 2: Finding the maximum of two numbers
+        int a = 15, b = 20;
+        int max = (a > b) ? a : b;
+        System.out.println("Maximum: " + max);
 
+        // Example 3: Nested ternary (for multiple conditions)
+        int marks = 85;
+        String grade = (marks >= 90) ? "A+"
+                        : (marks >= 75) ? "A"
+                        : (marks >= 60) ? "B"
+                        : (marks >= 50) ? "C"
+                        : "F";
+        System.out.println("Marks: " + marks + " → Grade: " + grade);
+
+        // Example 4: Checking positive, negative, or zero
+        int value = -5;
+        String check = (value > 0) ? "Positive" : (value == 0 ? "Zero" : "Negative");
+        System.out.println("Value " + value + " is " + check);
 
  
 
