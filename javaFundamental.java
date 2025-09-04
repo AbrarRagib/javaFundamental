@@ -447,7 +447,34 @@ public class javaFundamental {
 
 
 
+//if Else if
+ int num = 75;
 
+        // Check the grade based on marks
+        if (num >= 90) {
+            System.out.println("Grade: A+");
+        } else if (num >= 80) {
+            System.out.println("Grade: A");
+        } else if (num >= 70) {
+            System.out.println("Grade: B");
+        } else if (num >= 60) {
+            System.out.println("Grade: C");
+        } else if (num >= 50) {
+            System.out.println("Grade: D");
+        } else {
+            System.out.println("Grade: F");
+        }
+
+        // Example with negative or zero check
+        int value = -10;
+
+        if (value > 0) {
+            System.out.println("Value is positive");
+        } else if (value == 0) {
+            System.out.println("Value is zero");
+        } else {
+            System.out.println("Value is negative");
+        }
 
 
 
