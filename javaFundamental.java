@@ -358,32 +358,143 @@ public class javaFundamental {
 
 
 
-        boolean a = true;
-        boolean b = false;
+        // // Logical Operators Example
+        // boolean boolA = true;
+        // boolean boolB = false;
 
-        // 1. AND (&&)
-        // Returns true only if both operands are true
-        boolean andResult = a && b;
-        System.out.println("Logical AND (a && b): " + andResult);
+        // // 1. AND (&&)
+        // boolean andResult = boolA && boolB;
+        // System.out.println("Logical AND (boolA && boolB): " + andResult);
 
-        // 2. OR (||)
-        // Returns true if at least one operand is true
-        boolean orResult = a || b;
-        System.out.println("Logical OR (a || b): " + orResult);
+        // // 2. OR (||)
+        // boolean orResult = boolA || boolB;
+        // System.out.println("Logical OR (boolA || boolB): " + orResult);
 
-        // 3. NOT (!)
-        // Reverses the boolean value
-        boolean notA = !a;
-        boolean notB = !b;
-        System.out.println("Logical NOT (!a): " + notA);
-        System.out.println("Logical NOT (!b): " + notB);
+        // // 3. NOT (!)
+        // boolean notA = !boolA;
+        // boolean notB = !boolB;
+        // System.out.println("Logical NOT (!boolA): " + notA);
+        // System.out.println("Logical NOT (!boolB): " + notB);
 
-        // Example with expressions
-        int x = 10;
-        int y = 20;
-        boolean result = (x < y) && (y > 15); // true && true → true
-        System.out.println("\nExample with expressions (x < y && y > 15): " + result);
-    
+        // // Example with expressions
+        // int x = 10;
+        // int y = 20;
+        // boolean result = (x < y) && (y > 15); // true && true → true
+        // System.out.println("\nExample with expressions (x < y && y > 15): " + result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /**
+ * IfElseExample.java
+ * ------------------
+ * This program demonstrates the usage of if-else statements in Java.
+ * The if-else statement is used to execute different blocks of code
+ * based on a condition (boolean expression).
+ *
+ * Types of if statements:
+ * 1. if
+ * 2. if-else
+ * 3. if-else-if ladder
+ * 4. nested if
+ */
+
+
+
+
+ int num = 15;
+
+        // 1. Simple if
+        if (num > 10) {
+            System.out.println("Number is greater than 10");
+        }
+
+        // 2. if-else
+        if (num % 2 == 0) {
+            System.out.println("Number is even");
+        } else {
+            System.out.println("Number is odd");
+        }
+
+        // 3. if-else-if ladder
+        if (num < 0) {
+            System.out.println("Number is negative");
+        } else if (num == 0) {
+            System.out.println("Number is zero");
+        } else if (num > 0 && num <= 10) {
+            System.out.println("Number is positive and less than or equal to 10");
+        } else {
+            System.out.println("Number is positive and greater than 10");
+        }
+
+        // 4. Nested if
+        int a = 20, b = 30;
+        if (a > 10) {
+            if (b > 25) {
+                System.out.println("a is greater than 10 and b is greater than 25");
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         
