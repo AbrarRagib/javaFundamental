@@ -283,38 +283,107 @@ public class javaFundamental {
 
 
 
- int a = 10;
-        int b = 20;
+//  int a = 10;
+//         int b = 20;
 
-        // 1. Equal to
-        boolean isEqual = (a == b);
-        System.out.println("Equal to (==): " + a + " == " + b + " → " + isEqual);
+//         // 1. Equal to
+//         boolean isEqual = (a == b);
+//         System.out.println("Equal to (==): " + a + " == " + b + " → " + isEqual);
 
-        // 2. Not equal to
-        boolean isNotEqual = (a != b);
-        System.out.println("Not equal to (!=): " + a + " != " + b + " → " + isNotEqual);
+//         // 2. Not equal to
+//         boolean isNotEqual = (a != b);
+//         System.out.println("Not equal to (!=): " + a + " != " + b + " → " + isNotEqual);
 
-        // 3. Greater than
-        boolean isGreater = (a > b);
-        System.out.println("Greater than (>): " + a + " > " + b + " → " + isGreater);
+//         // 3. Greater than
+//         boolean isGreater = (a > b);
+//         System.out.println("Greater than (>): " + a + " > " + b + " → " + isGreater);
 
-        // 4. Less than
-        boolean isLess = (a < b);
-        System.out.println("Less than (<): " + a + " < " + b + " → " + isLess);
+//         // 4. Less than
+//         boolean isLess = (a < b);
+//         System.out.println("Less than (<): " + a + " < " + b + " → " + isLess);
 
-        // 5. Greater than or equal to
-        boolean isGreaterOrEqual = (a >= b);
-        System.out.println("Greater than or equal to (>=): " + a + " >= " + b + " → " + isGreaterOrEqual);
+//         // 5. Greater than or equal to
+//         boolean isGreaterOrEqual = (a >= b);
+//         System.out.println("Greater than or equal to (>=): " + a + " >= " + b + " → " + isGreaterOrEqual);
 
-        // 6. Less than or equal to
-        boolean isLessOrEqual = (a <= b);
-        System.out.println("Less than or equal to (<=): " + a + " <= " + b + " → " + isLessOrEqual);
-
-
+//         // 6. Less than or equal to
+//         boolean isLessOrEqual = (a <= b);
+//         System.out.println("Less than or equal to (<=): " + a + " <= " + b + " → " + isLessOrEqual);
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * LogicalOperators.java
+ * ---------------------
+ * This program demonstrates logical operators in Java.
+ * Logical operators are used to combine multiple boolean expressions.
+ *
+ * Logical operators:
+ * 1. AND (&&)
+ * 2. OR (||)
+ * 3. NOT (!)
+ */
+
+
+
+
+
+
+
+
+
+        boolean a = true;
+        boolean b = false;
+
+        // 1. AND (&&)
+        // Returns true only if both operands are true
+        boolean andResult = a && b;
+        System.out.println("Logical AND (a && b): " + andResult);
+
+        // 2. OR (||)
+        // Returns true if at least one operand is true
+        boolean orResult = a || b;
+        System.out.println("Logical OR (a || b): " + orResult);
+
+        // 3. NOT (!)
+        // Reverses the boolean value
+        boolean notA = !a;
+        boolean notB = !b;
+        System.out.println("Logical NOT (!a): " + notA);
+        System.out.println("Logical NOT (!b): " + notB);
+
+        // Example with expressions
+        int x = 10;
+        int y = 20;
+        boolean result = (x < y) && (y > 15); // true && true → true
+        System.out.println("\nExample with expressions (x < y && y > 15): " + result);
+    
 
 
         
