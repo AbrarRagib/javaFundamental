@@ -166,6 +166,92 @@ public class javaFundamental {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * ArithmeticOperations.java
+ * -------------------------
+ * This program demonstrates basic arithmetic operations in Java.
+ * Arithmetic operations = operations that involve numbers to calculate results.
+ *
+ * Operations covered:
+ * 1. Addition (+)
+ * 2. Subtraction (-)
+ * 3. Multiplication (*)
+ * 4. Division (/)
+ * 5. Modulus (%)
+ * 6. Increment (++) and Decrement (--)
+ */
+
+
+
+// 1. Addition
+        int a = 10;
+        int b = 20;
+        int sum = a + b;
+        System.out.println("Addition:");
+        System.out.println(a + " + " + b + " = " + sum);
+
+        // 2. Subtraction
+        int diff = b - a;
+        System.out.println("\nSubtraction:");
+        System.out.println(b + " - " + a + " = " + diff);
+
+        // 3. Multiplication
+        int product = a * b;
+        System.out.println("\nMultiplication:");
+        System.out.println(a + " * " + b + " = " + product);
+
+        // 4. Division
+        int quotient = b / a;   // Integer division
+        System.out.println("\nDivision:");
+        System.out.println(b + " / " + a + " = " + quotient);
+
+        double preciseQuotient = (double) b / a; // For decimal result
+        System.out.println("Precise division (double): " + b + " / " + a + " = " + preciseQuotient);
+
+        // 5. Modulus (remainder)
+        int remainder = b % a;
+        System.out.println("\nModulus:");
+        System.out.println(b + " % " + a + " = " + remainder);
+
+        // 6. Increment and Decrement
+        int x = 5;
+        System.out.println("\nIncrement and Decrement:");
+        System.out.println("Original x = " + x);
+        System.out.println("x++ = " + (x++));  // Post-increment
+        System.out.println("After x++ , x = " + x);
+        System.out.println("++x = " + (++x));  // Pre-increment
+        System.out.println("x-- = " + (x--));  // Post-decrement
+        System.out.println("--x = " + (--x));  // Pre-decrement
+
+
+
+
+
         
     }
 }
