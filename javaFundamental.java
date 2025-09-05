@@ -592,76 +592,117 @@ public class javaFundamental {
 
 
 
- int day = 3; // 1 = Monday, 2 = Tuesday, etc.
-        switch (day) {
-            case 1:
-                System.out.println("Monday");
-                break;
-            case 2:
-                System.out.println("Tuesday");
-                break;
-            case 3:
-                System.out.println("Wednesday");
-                break;
-            case 4:
-                System.out.println("Thursday");
-                break;
-            case 5:
-                System.out.println("Friday");
-                break;
-            case 6:
-                System.out.println("Saturday");
-                break;
-            case 7:
-                System.out.println("Sunday");
-                break;
-            default:
-                System.out.println("Invalid day number!");
-        }
+//  int day = 3; // 1 = Monday, 2 = Tuesday, etc.
+//         switch (day) {
+//             case 1:
+//                 System.out.println("Monday");
+//                 break;
+//             case 2:
+//                 System.out.println("Tuesday");
+//                 break;
+//             case 3:
+//                 System.out.println("Wednesday");
+//                 break;
+//             case 4:
+//                 System.out.println("Thursday");
+//                 break;
+//             case 5:
+//                 System.out.println("Friday");
+//                 break;
+//             case 6:
+//                 System.out.println("Saturday");
+//                 break;
+//             case 7:
+//                 System.out.println("Sunday");
+//                 break;
+//             default:
+//                 System.out.println("Invalid day number!");
+//         }
 
-        System.out.println("----------------------------------");
+//         System.out.println("----------------------------------");
 
-        // Example 2: Switch with Strings
-        String fruit = "Mango";
-        switch (fruit) {
-            case "Apple":
-                System.out.println("Red fruit");
-                break;
-            case "Banana":
-                System.out.println("Yellow fruit");
-                break;
-            case "Mango":
-                System.out.println("King of fruits");
-                break;
-            default:
-                System.out.println("Unknown fruit");
-        }
+//         // Example 2: Switch with Strings
+//         String fruit = "Mango";
+//         switch (fruit) {
+//             case "Apple":
+//                 System.out.println("Red fruit");
+//                 break;
+//             case "Banana":
+//                 System.out.println("Yellow fruit");
+//                 break;
+//             case "Mango":
+//                 System.out.println("King of fruits");
+//                 break;
+//             default:
+//                 System.out.println("Unknown fruit");
+//         }
 
-        System.out.println("----------------------------------");
+//         System.out.println("----------------------------------");
 
-        // Example 3: Multiple cases together
-        char grade = 'B';
-        switch (grade) {
-            case 'A':
-            case 'B':
-                System.out.println("Excellent performance!");
-                break;
-            case 'C':
-                System.out.println("Good effort!");
-                break;
-            case 'D':
-                System.out.println("Needs improvement.");
-                break;
-            case 'F':
-                System.out.println("Failed.");
-                break;
-            default:
-                System.out.println("Invalid grade!");
-        }
-
-
+//         // Example 3: Multiple cases together
+//         char grade = 'B';
+//         switch (grade) {
+//             case 'A':
+//             case 'B':
+//                 System.out.println("Excellent performance!");
+//                 break;
+//             case 'C':
+//                 System.out.println("Good effort!");
+//                 break;
+//             case 'D':
+//                 System.out.println("Needs improvement.");
+//                 break;
+//             case 'F':
+//                 System.out.println("Failed.");
+//                 break;
+//             default:
+//                 System.out.println("Invalid grade!");
+//         }
 
 
+
+
+
+
+// int day = 3;
+
+// // Switch Expression returning a value
+// String result = switch (day) {
+//     case 1 -> "Monday";
+//     case 2 -> "Tuesday";
+//     case 3 -> "Wednesday";
+//     case 4, 5 -> "Almost Weekend";  // Multiple cases together
+//     case 6, 7 -> "Weekend";
+//     default -> "Invalid day";
+// };
+
+// System.out.println(result);
+
+
+        
+
+
+
+
+
+
+
+
+// int score = 85;
+
+// String grade = switch (score / 10) {
+//     case 10, 9 -> "A";
+//     case 8 -> "B";
+//     case 7 -> "C";
+//     case 6 -> "D";
+//     default -> {
+//         // Multiple statements
+//         System.out.println("Score too low!");
+//         yield "F";  // return value from block
+//     }
+// };
+
+// System.out.println("Grade: " + grade);
 
 
 
