@@ -763,24 +763,115 @@ public class javaFundamental {
 
 
 
-int score = 1000;
+// int score = 1000;
 
-String grade = switch (score / 10) {
-    case 10,9 -> "A";
-    case 8 -> "B";
-    case 7 -> "C";
-    case 6 -> "D";
-    default -> {
-        if (score > 100){
-            yield "Invalid Score(Too High)";
-        }else if (score < 0){
-            yield "Invalid Score(Negative)";
-        }else{
-            yield "F";
-        }
-    }
-};
-System.out.println("Score: " + score + " Grade: " + grade);
+// String grade = switch (score / 10) {
+//     case 10,9 -> "A";
+//     case 8 -> "B";
+//     case 7 -> "C";
+//     case 6 -> "D";
+//     default -> {
+//         if (score > 100){
+//             yield "Invalid Score(Too High)";
+//         }else if (score < 0){
+//             yield "Invalid Score(Negative)";
+//         }else{
+//             yield "F";
+//         }
+//     }
+// };
+// System.out.println("Score: " + score + " Grade: " + grade);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * ForLoopExample.java
+ * -------------------
+ * A for loop in Java is used when you want to repeat a block of code 
+ * a specific number of times.
+ *
+ * Syntax:
+ *   for (initialization; condition; update) {
+ *       // code block
+ *   }
+ */
+
+
+
+
+
+    // System.out.println("Counting from 1 to 5: ");
+    // for (int i = 1; i <= 5; i++){
+    //     System.out.println("i = " + i);
+    // }
+
+
+    // System.out.println("Counting from 5 to 1: ");
+    // for (int i = 5; i >= 1; i--){
+    //     System.out.println("i = " + i);
+    // }
+
+
+    
+        
+// // Example 1: Simple counting loop
+//         System.out.println("Counting from 1 to 5:");
+//         for (int i = 1; i <= 5; i++) {
+//             System.out.println("i = " + i);
+//         }
+
+//         System.out.println("----------------------------");
+
+//         // Example 2: Loop with decrement
+//         System.out.println("Counting down from 5 to 1:");
+//         for (int i = 5; i >= 1; i--) {
+//             System.out.println("i = " + i);
+//         }
+
+//         System.out.println("----------------------------");
+
+//         // Example 3: For loop with step increment
+//         System.out.println("Even numbers from 2 to 10:");
+//         for (int i = 2; i <= 10; i += 2) {
+//             System.out.println("i = " + i);
+//         }
+
+//         System.out.println("----------------------------");
+
+//         // Example 4: Nested for loop
+//         System.out.println("Multiplication table (1 to 3):");
+//         for (int i = 1; i <= 3; i++) {
+//             for (int j = 1; j <= 3; j++) {
+//                 System.out.print((i * j) + "\t"); // print in same line with tab
+//             }
+//             System.out.println(); // new line after each row
+//         }
+
+//         System.out.println("----------------------------");
+
+//         // Example 5: Infinite for loop (use with caution)
+//         // Uncomment to test
+//         /*
+//         for (;;) {
+//             System.out.println("This will run forever unless you break!");
+//             break; // without this break, it runs infinitely
+//         }
+//         */
+
 
 
 
