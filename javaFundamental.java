@@ -662,7 +662,15 @@ public class javaFundamental {
 
 
 
+// New switch Expression (Java 12 preview → stable in Java 14)
 
+// Switch can now return a value (expression).
+
+// Use -> (arrow labels) instead of :.
+
+// No need for break.
+
+// Multiple case labels can be combined with commas.
 
 // int day = 3;
 
@@ -685,7 +693,9 @@ public class javaFundamental {
 
 
 
+// yield in Switch (Java 13+)
 
+// If a case has multiple statements, use yield to return a value.
 
 
 // int score = 85;
@@ -703,6 +713,87 @@ public class javaFundamental {
 // };
 
 // System.out.println("Grade: " + grade);
+
+
+
+
+
+
+// int day = 1;
+//  String result;
+
+//  switch (day) {
+//     case 1: 
+//         result = "Saturday";
+//         break;
+//     case 2:
+//         result = "Sunday";
+//         break;
+//     case 3: 
+//         result = "Monday";
+//         break;
+//     default:
+//         result = "Invalid day";
+//         break;
+        
+    
+//  }
+//  System.out.println(result);
+
+
+
+
+
+
+// int day = 1;
+// String result = switch (day){
+//     case 1 -> "Saturday";
+//     case 2 -> "Sunday";
+//     case 3 -> "Monday";
+//     case 4,5 -> "Almost Weekend";
+//     case 6,7 -> "Weekend";
+//     default -> "Invalid Day";
+
+// };
+
+// System.out.println(result);
+
+
+
+
+
+
+int score = 1000;
+
+String grade = switch (score / 10) {
+    case 10,9 -> "A";
+    case 8 -> "B";
+    case 7 -> "C";
+    case 6 -> "D";
+    default -> {
+        if (score > 100){
+            yield "Invalid Score(Too High)";
+        }else if (score < 0){
+            yield "Invalid Score(Negative)";
+        }else{
+            yield "F";
+        }
+    }
+};
+System.out.println("Score: " + score + " Grade: " + grade);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
