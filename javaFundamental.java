@@ -940,21 +940,46 @@ public class javaFundamental {
 
 
 
-//SAU Question
-    for(int i = 1; i <= 100; i++) {
-        if (i % 7 == 0 &&  i % 9 == 0 ) {
-            System.out.println("Merge");
-        } else if ( i % 7 == 0) {
-            System.out.println("seven");
-        } else if (i % 9 == 0) {
-            System.out.println("nine");
-        } else {
-            System.out.println(i);
-        }
-    }
+// //SAU Question
+//     for(int i = 1; i <= 100; i++) {
+//         if (i % 7 == 0 &&  i % 9 == 0 ) {
+//             System.out.println("Merge");
+//         } else if ( i % 7 == 0) {
+//             System.out.println("seven");
+//         } else if (i % 9 == 0) {
+//             System.out.println("nine");
+//         } else {
+//             System.out.println(i);
+//         }
+//     }
 
 
 
+
+
+
+
+
+// for (int i = 1; i <= 100; i++) {
+//     if (i % 7 == 0 && i % 9 == 0) {
+//         System.out.println("Merge");
+//     }else if (i % 7 == 0) {
+//         System.out.println("Seven");
+//     }else if (i % 9 == 0) {
+//         System.out.println("Nine");
+//     }else {
+//         System.out.println(i);
+//     }
+// }
+
+
+
+
+int i = 1;
+while(i<=4){
+    System.out.println(i);
+     i++;
+}
 
 
 
