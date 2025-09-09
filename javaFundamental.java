@@ -1078,7 +1078,7 @@ public class javaFundamental {
         System.out.println("----------------------------");
 
 
-        // Example 6: Infinite do-while loop (⚠️ dangerous)
+        // Example 6: Infinite do-while loop ( dangerous)
         /*
         int k = 1;
         do {
