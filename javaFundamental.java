@@ -975,11 +975,142 @@ public class javaFundamental {
 
 
 
-int i = 1;
-while(i<=4){
-    System.out.println(i);
-     i++;
-}
+// int i = 1;
+// while(i<=4){
+//     System.out.println(i);
+//      i++;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// In do-while, the body executes at least once, even if the condition is false.
+
+// Guarantees at least one execution, unlike while.
+
+// Best used for scenarios like menus, user input loops, or when code must run once before checking.
+
+// Must be careful with conditions, or it can turn into an infinite loop.
+
+// Always put the ; after while(condition).
+
+
+
+ // Example 1: Basic do-while loop
+        int count = 1;
+        do {
+            System.out.println("Count: " + count);
+            count++;
+        } while (count <= 5);
+        System.out.println("----------------------------");
+        // Runs from 1 to 5. Condition checked at the END.
+
+
+        // Example 2: Condition is false at the start
+        int num = 10;
+        do {
+            System.out.println("This prints at least once even though num = " + num);
+        } while (num < 5);
+        System.out.println("----------------------------");
+        // Even though condition is false, the block ran once.
+
+
+        // Example 3: Sum of first 10 natural numbers
+        int i = 1, sum = 0;
+        do {
+            sum += i;  // sum = sum + i
+            i++;
+        } while (i <= 10);
+        System.out.println("Sum of first 10 numbers: " + sum);
+        System.out.println("----------------------------");
+
+
+        // Example 4: Multiplication table of 7
+        int j = 1;
+        do {
+            System.out.println("7 x " + j + " = " + (7 * j));
+            j++;
+        } while (j <= 10);
+        System.out.println("----------------------------");
+
+
+        // Example 5: Menu-driven program simulation
+        int option = 1; // just a simulation value
+        do {
+            System.out.println("Menu:");
+            System.out.println("1. Say Hello");
+            System.out.println("2. Say Bye");
+            System.out.println("3. Exit");
+            System.out.println("Selected option: " + option);
+
+            if (option == 1) {
+                System.out.println("Hello!");
+            } else if (option == 2) {
+                System.out.println("Bye!");
+            } else if (option == 3) {
+                System.out.println("Exiting...");
+            }
+
+            option++; // increasing option just for simulation
+        } while (option <= 3);
+        System.out.println("----------------------------");
+
+
+        // Example 6: Infinite do-while loop (⚠️ dangerous)
+        /*
+        int k = 1;
+        do {
+            System.out.println("This will run forever...");
+        } while (true);
+        */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
