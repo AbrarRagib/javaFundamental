@@ -904,44 +904,54 @@ public class javaFundamental {
 
 
 
- // Example 1: Simple Counting
-        int count = 1; // initialization
-        while (count <= 5) { // condition checked before every iteration
-            System.out.println("Count: " + count);
-            count++; // increment to avoid infinite loop
+//  // Example 1: Simple Counting
+//         int count = 1; // initialization
+//         while (count <= 5) { // condition checked before every iteration
+//             System.out.println("Count: " + count);
+//             count++; // increment to avoid infinite loop
+//         }
+//         System.out.println("----------------------------");
+
+//         // Example 2: Sum of first 10 natural numbers
+//         int num = 1;
+//         int sum = 0;
+//         while (num <= 10) {
+//             sum += num; // same as sum = sum + num
+//             num++;
+//         }
+//         System.out.println("Sum of first 10 numbers: " + sum);
+//         System.out.println("----------------------------");
+
+//         // Example 3: Multiplication table of 5
+//         int i = 1;
+//         while (i <= 10) {
+//             System.out.println("5 x " + i + " = " + (5 * i));
+//             i++;
+//         }
+//         System.out.println("----------------------------");
+
+//         // Example 4: Infinite loop (⚠ careful – will run forever)
+//         // Uncommenting below will cause endless printing
+//         /*
+//         while (true) {
+//             System.out.println("This runs forever!");
+//         }
+//         */
+
+
+
+//SAU Question
+    for(int i = 1; i <= 100; i++) {
+        if (i % 7 == 0 &&  i % 9 == 0 ) {
+            System.out.println("Merge");
+        } else if ( i % 7 == 0) {
+            System.out.println("seven");
+        } else if (i % 9 == 0) {
+            System.out.println("nine");
+        } else {
+            System.out.println(i);
         }
-        System.out.println("----------------------------");
-
-        // Example 2: Sum of first 10 natural numbers
-        int num = 1;
-        int sum = 0;
-        while (num <= 10) {
-            sum += num; // same as sum = sum + num
-            num++;
-        }
-        System.out.println("Sum of first 10 numbers: " + sum);
-        System.out.println("----------------------------");
-
-        // Example 3: Multiplication table of 5
-        int i = 1;
-        while (i <= 10) {
-            System.out.println("5 x " + i + " = " + (5 * i));
-            i++;
-        }
-        System.out.println("----------------------------");
-
-        // Example 4: Infinite loop (⚠ careful – will run forever)
-        // Uncommenting below will cause endless printing
-        /*
-        while (true) {
-            System.out.println("This runs forever!");
-        }
-        */
-
-
-
-
-
+    }
 
 
 
