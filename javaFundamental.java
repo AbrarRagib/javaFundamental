@@ -1018,76 +1018,73 @@ public class javaFundamental {
 
 
 
- // Example 1: Basic do-while loop
-        int count = 1;
-        do {
-            System.out.println("Count: " + count);
-            count++;
-        } while (count <= 5);
-        System.out.println("----------------------------");
-        // Runs from 1 to 5. Condition checked at the END.
+//  // Example 1: Basic do-while loop
+//         int count = 1;
+//         do {
+//             System.out.println("Count: " + count);
+//             count++;
+//         } while (count <= 5);
+//         System.out.println("----------------------------");
+//         // Runs from 1 to 5. Condition checked at the END.
 
 
-        // Example 2: Condition is false at the start
-        int num = 10;
-        do {
-            System.out.println("This prints at least once even though num = " + num);
-        } while (num < 5);
-        System.out.println("----------------------------");
-        // Even though condition is false, the block ran once.
+//         // Example 2: Condition is false at the start
+//         int num = 10;
+//         do {
+//             System.out.println("This prints at least once even though num = " + num);
+//         } while (num < 5);
+//         System.out.println("----------------------------");
+//         // Even though condition is false, the block ran once.
 
 
-        // Example 3: Sum of first 10 natural numbers
-        int i = 1, sum = 0;
-        do {
-            sum += i;  // sum = sum + i
-            i++;
-        } while (i <= 10);
-        System.out.println("Sum of first 10 numbers: " + sum);
-        System.out.println("----------------------------");
+//         // Example 3: Sum of first 10 natural numbers
+//         int i = 1, sum = 0;
+//         do {
+//             sum += i;  // sum = sum + i
+//             i++;
+//         } while (i <= 10);
+//         System.out.println("Sum of first 10 numbers: " + sum);
+//         System.out.println("----------------------------");
 
 
-        // Example 4: Multiplication table of 7
-        int j = 1;
-        do {
-            System.out.println("7 x " + j + " = " + (7 * j));
-            j++;
-        } while (j <= 10);
-        System.out.println("----------------------------");
+//         // Example 4: Multiplication table of 7
+//         int j = 1;
+//         do {
+//             System.out.println("7 x " + j + " = " + (7 * j));
+//             j++;
+//         } while (j <= 10);
+//         System.out.println("----------------------------");
 
 
-        // Example 5: Menu-driven program simulation
-        int option = 1; // just a simulation value
-        do {
-            System.out.println("Menu:");
-            System.out.println("1. Say Hello");
-            System.out.println("2. Say Bye");
-            System.out.println("3. Exit");
-            System.out.println("Selected option: " + option);
+//         // Example 5: Menu-driven program simulation
+//         int option = 1; // just a simulation value
+//         do {
+//             System.out.println("Menu:");
+//             System.out.println("1. Say Hello");
+//             System.out.println("2. Say Bye");
+//             System.out.println("3. Exit");
+//             System.out.println("Selected option: " + option);
 
-            if (option == 1) {
-                System.out.println("Hello!");
-            } else if (option == 2) {
-                System.out.println("Bye!");
-            } else if (option == 3) {
-                System.out.println("Exiting...");
-            }
+//             if (option == 1) {
+//                 System.out.println("Hello!");
+//             } else if (option == 2) {
+//                 System.out.println("Bye!");
+//             } else if (option == 3) {
+//                 System.out.println("Exiting...");
+//             }
 
-            option++; // increasing option just for simulation
-        } while (option <= 3);
-        System.out.println("----------------------------");
-
-
-        // Example 6: Infinite do-while loop ( dangerous)
-        /*
-        int k = 1;
-        do {
-            System.out.println("This will run forever...");
-        } while (true);
-        */
+//             option++; // increasing option just for simulation
+//         } while (option <= 3);
+//         System.out.println("----------------------------");
 
 
-
+//         // Example 6: Infinite do-while loop ( dangerous)
+//         /*
+//         int k = 1;
+//         do {
+//             System.out.println("This will run forever...");
+//         } while (true);
+//         */
 
 
 
@@ -1099,6 +1096,235 @@ public class javaFundamental {
 
 
 
+
+
+
+
+
+
+// for Loop in Java
+
+// A for loop is used when you know how many times you want to repeat a block of code.
+
+
+// Syntax
+// for (initialization; condition; update) {
+//     // code to execute
+// }
+
+
+// Initialization → runs once at the start (e.g., int i = 1;)
+
+// Condition → checked before each iteration (loop runs while true)
+
+// Update → executed after each iteration (e.g., i++)
+
+
+
+//  // Example 1: Simple for loop
+//         for (int i = 1; i <= 5; i++) {
+//             System.out.println("Iteration: " + i);
+//         }
+//         System.out.println("----------------------------");
+
+
+//         // Example 2: Printing even numbers from 2 to 10
+//         for (int i = 2; i <= 10; i += 2) {
+//             System.out.println("Even number: " + i);
+//         }
+//         System.out.println("----------------------------");
+
+
+//         // Example 3: Countdown (10 to 1)
+//         for (int i = 10; i >= 1; i--) {
+//             System.out.println("Countdown: " + i);
+//         }
+//         System.out.println("Blast off!");
+//         System.out.println("----------------------------");
+
+
+//         // Example 4: Nested for loop (Multiplication table)
+//         System.out.println("Multiplication table (1 to 3):");
+//         for (int i = 1; i <= 3; i++) {      // Outer loop → rows
+//             for (int j = 1; j <= 3; j++) {  // Inner loop → columns
+//                 System.out.print((i * j) + "\t");
+//             }
+//             System.out.println(); // new line after each row
+//         }
+//         System.out.println("----------------------------");
+
+
+//         // Example 5: Enhanced for loop (for-each loop)
+//         int[] numbers = {10, 20, 30, 40, 50};
+//         System.out.println("Array values:");
+//         for (int num : numbers) {
+//             System.out.println(num);
+//         }
+//         System.out.println("----------------------------");
+
+
+//         // Example 6: Infinite for loop ( dangerous)
+//         /*
+//         for (;;) {
+//             System.out.println("This runs forever...");
+//         }
+//         */
+
+
+
+
+// for ( int i = 5; i >=1; i--){
+//     System.out.println(i);
+// }
+
+
+
+// for (int i = 1; i <=3; i++){
+//     for (int j = 1; j <=3; j++){
+//         System.out.print(i + j + " ");
+//     } 
+//     System.out.println();
+// }
+
+// int count = 1;
+// for (int i = 1; i <= 2; i++) {
+//     for (int j = 1; j <= 3; j++) {
+//         System.out.print(count + " ");
+//         count++;
+//     }
+//     System.out.println();
+// }
+ 
+
+
+// System.out.println("1. Number Pyramid:");
+//         for (int i = 1; i <= 5; i++) {
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print(j);
+//             }
+//             System.out.println();
+//         }
+//         System.out.println();
+
+
+//  System.out.println("2. Star Pyramid (Right-aligned):");
+//         for (int i = 1; i <= 5; i++) {
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print("* ");
+//             }
+//             System.out.println();
+//         }
+//         System.out.println();
+
+
+
+
+// for (int i = 1; i <= 5; i++){
+//     for (int j = 1; j <= i; j++){
+//         System.out.print("*");
+//     }System.out.println();
+// }
+
+
+// // 3. Centered Star Pyramid
+//         System.out.println("3. Centered Star Pyramid:");
+//         int rows = 5;
+//         for (int i = 1; i <= rows; i++) {
+//             // Print spaces
+//             for (int j = 1; j <= rows - i; j++) {
+//                 System.out.print(" ");
+//             }
+//             // Print stars
+//             for (int k = 1; k <= i; k++) {
+//                 System.out.print("* ");
+//             }
+//             System.out.println();
+//         }
+//         System.out.println();
+        
+//         // 4. Number Pyramid (Sequential: 1, 23, 456, 7890)
+//         System.out.println("4. Sequential Number Pyramid:");
+//         int num = 1;
+//         for (int i = 1; i <= 4; i++) {
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print(num + " ");
+//                 num++;
+//             }
+//             System.out.println();
+//         }
+//         System.out.println();
+        
+//         // 5. Reverse Number Pyramid
+//         System.out.println("5. Reverse Number Pyramid:");
+//         for (int i = 5; i >= 1; i--) {
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print(j + " ");
+//             }
+//             System.out.println();
+//         }
+//         System.out.println();
+        
+//         // 6. Floyd's Triangle
+//         System.out.println("6. Floyd's Triangle:");
+//         int number = 1;
+//         for (int i = 1; i <= 5; i++) {
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print(number + " ");
+//                 number++;
+//             }
+//             System.out.println();
+//         }
+//         System.out.println();
+        
+//         // 7. Centered Number Pyramid
+//         System.out.println("7. Centered Number Pyramid:");
+//         for (int i = 1; i <= 5; i++) {
+//             // Print spaces
+//             for (int j = 1; j <= 5 - i; j++) {
+//                 System.out.print(" ");
+//             }
+//             // Print numbers
+//             for (int k = 1; k <= i; k++) {
+//                 System.out.print(k + " ");
+//             }
+//             System.out.println();
+//         }
+//         System.out.println();
+        
+//         // 8. Diamond Pattern
+//         System.out.println("8. Diamond Pattern:");
+//         // Upper half
+//         for (int i = 1; i <= 4; i++) {
+//             for (int j = 1; j <= 4 - i; j++) {
+//                 System.out.print(" ");
+//             }
+//             for (int k = 1; k <= i; k++) {
+//                 System.out.print("* ");
+//             }
+//             System.out.println();
+//         }
+//         // Lower half
+//         for (int i = 3; i >= 1; i--) {
+//             for (int j = 1; j <= 4 - i; j++) {
+//                 System.out.print(" ");
+//             }
+//             for (int k = 1; k <= i; k++) {
+//                 System.out.print("* ");
+//             }
+//             System.out.println();
+//         }
+//         System.out.println();
+        
+//         // 9. Alphabet Pyramid
+//         System.out.println("9. Alphabet Pyramid:");
+//         for (int i = 1; i <= 5; i++) {
+//             char ch = 'A';
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print(ch + " ");
+//                 ch++;
+//             }
+//             System.out.println();
+//         }
 
 
 
