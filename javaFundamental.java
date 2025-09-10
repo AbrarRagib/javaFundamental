@@ -1331,19 +1331,90 @@ public class javaFundamental {
 
 
 
-for( int i = 1; i <=100; i++){
-    if (i % 7 == 0 && i % 9 == 0){
-        System.out.println("Merge");
-    }else if (i % 7 == 0){
-        System.out.println("Seven");
-    }else if(i % 9 == 0){
-        System.out.println("Nine");
-    }else {
-        System.out.println(i);
-    }
-}
+// for( int i = 1; i <=100; i++){
+//     if (i % 7 == 0 && i % 9 == 0){
+//         System.out.println("Merge");
+//     }else if (i % 7 == 0){
+//         System.out.println("Seven");
+//     }else if(i % 9 == 0){
+//         System.out.println("Nine");
+//     }else {
+//         System.out.println(i);
+//     }
+// }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// What is a Class in Java?
+
+// A class is a blueprint/template for creating objects.
+
+// It defines:
+
+// Fields (attributes/properties/variables) → data of the object
+
+// Methods (functions/behaviors) → actions the object can perform
+
+//  Think of a class like a "blueprint of a car" (what features it has).
+//  An object is the "actual car" you can drive, made from that blueprint.
+
+
+
+
+
+
+
+//Syntax of a Class
+// class ClassName {
+//     // fields (variables)
+//     dataType variableName;
+
+//     // methods (functions)
+//     returnType methodName(parameters) {
+//         // method body
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+// What is an Object in Java?
+
+// An object is an instance of a class.
+
+// Created using the new keyword.
+
+
+// ClassName obj = new ClassName();
 
 
 
