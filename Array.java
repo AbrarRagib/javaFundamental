@@ -169,49 +169,64 @@
 
 
 
-public class Array {
-    public static void main(String[] args) {
+// public class Array {
+//     public static void main(String[] args) {
 
-        // Declare and initialize a 3D array
-        int[][][] array3D = {
-            {   // Layer 1
-                {1, 2, 3},
-                {4, 5, 6}
-            },
-            {   // Layer 2
-                {7, 8, 9},
-                {10, 11, 12}
-            }
-        };
+//         // Declare and initialize a 3D array
+//         int[][][] array3D = {
+//             {   // Layer 1
+//                 {1, 2, 3},
+//                 {4, 5, 6}
+//             },
+//             {   // Layer 2
+//                 {7, 8, 9},
+//                 {10, 11, 12}
+//             }
+//         };
 
-        // Print using nested for-loop
-        System.out.println("3D Array using standard nested loops:");
-        for (int i = 0; i < array3D.length; i++) {           // Depth / Layer
-            System.out.println("Layer " + (i+1) + ":");
-            for (int j = 0; j < array3D[i].length; j++) {    // Row
-                for (int k = 0; k < array3D[i][j].length; k++) { // Column
-                    System.out.print(array3D[i][j][k] + " ");
-                }
-                System.out.println(); // new line after row
-            }
-            System.out.println(); // blank line after layer
-        }
+//         // Print using nested for-loop
+//         System.out.println("3D Array using standard nested loops:");
+//         for (int i = 0; i < array3D.length; i++) {           // Depth / Layer
+//             System.out.println("Layer " + (i+1) + ":");
+//             for (int j = 0; j < array3D[i].length; j++) {    // Row
+//                 for (int k = 0; k < array3D[i][j].length; k++) { // Column
+//                     System.out.print(array3D[i][j][k] + " ");
+//                 }
+//                 System.out.println(); // new line after row
+//             }
+//             System.out.println(); // blank line after layer
+//         }
 
-        System.out.println("--------------------------");
+//         System.out.println("--------------------------");
 
-        // Print using enhanced for-loop
-        System.out.println("3D Array using enhanced for-loop:");
-        int layerNum = 1;
-        for (int[][] layer : array3D) {     // each 2D layer
-            System.out.println("Layer " + layerNum + ":");
-            for (int[] row : layer) {       // each row in layer
-                for (int element : row) {   // each element in row
-                    System.out.print(element + " ");
-                }
-                System.out.println(); // new line after row
-            }
-            layerNum++;
-            System.out.println(); // blank line after layer
-        }
-    }
-}
+//         // Print using enhanced for-loop
+//         System.out.println("3D Array using enhanced for-loop:");
+//         int layerNum = 1;
+//         for (int[][] layer : array3D) {     // each 2D layer
+//             System.out.println("Layer " + layerNum + ":");
+//             for (int[] row : layer) {       // each row in layer
+//                 for (int element : row) {   // each element in row
+//                     System.out.print(element + " ");
+//                 }
+//                 System.out.println(); // new line after row
+//             }
+//             layerNum++;
+//             System.out.println(); // blank line after layer
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
