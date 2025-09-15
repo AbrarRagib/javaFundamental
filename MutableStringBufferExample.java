@@ -62,13 +62,13 @@
 
 
 
-// Example 3: Mutable String with StringBuffer
-public class MutableStringBufferExample {
-    public static void main(String[] args) {
-        StringBuffer sbf = new StringBuffer("Hello");
-        sbf.append(" World"); // Modifies the same object
+// // Example 3: Mutable String with StringBuffer
+// public class MutableStringBufferExample {
+//     public static void main(String[] args) {
+//         StringBuffer sbf = new StringBuffer("Hello");
+//         sbf.append(" World"); // Modifies the same object
         
-        System.out.println("Modified String: " + sbf); // Hello World
-    }
-}
-// Works like StringBuilder, but thread-safe.
+//         System.out.println("Modified String: " + sbf); // Hello World
+//     }
+// }
+// // Works like StringBuilder, but thread-safe.
