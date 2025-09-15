@@ -1465,6 +1465,13 @@ public class javaFundamental {
 
 
 
+int a = 1;
+int b = 1;
+
+        System.out.println(a==b);
+
+
+
         
     }
 }
