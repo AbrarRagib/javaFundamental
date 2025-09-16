@@ -1472,6 +1472,37 @@ public class javaFundamental {
 
 
 
+
+
+
+
+
+
+
+
+
+    for(int i =1; i <=100; i++){
+        if (i%7 == 0 && i%9 == 0){
+        System.out.println("Seven & Nine: Merge");
+        }else if (i%7 == 0){
+        System.out.println("Seven");
+        }else if (i%9 == 0){
+        System.out.println("Nine");
+        }else{
+        System.out.println(i);
+        }
+    }
+        
+
+
+
+
+
+
+
+
+
+
         
     }
 }

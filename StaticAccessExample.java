@@ -75,31 +75,31 @@
 
 
 
-// Example 2: Accessing Static Variable Without Object
+// // Example 2: Accessing Static Variable Without Object
 
-class Counter {
-    static int count = 0; // static variable
+// class Counter {
+//     static int count = 0; // static variable
 
-    Counter() {
-        count++;
-    }
-}
+//     Counter() {
+//         count++;
+//     }
+// }
 
-public class StaticAccessExample {
-    public static void main(String[] args) {
-        Counter c1 = new Counter();
-        Counter c2 = new Counter();
-        Counter c3 = new Counter();
-        Counter c4 = new Counter();
-
-
-        System.out.println(Counter.count); // Access directly via class name
-    }
-}
-// 3
-// The count variable keeps track of all objects created, because it’s static.
+// public class StaticAccessExample {
+//     public static void main(String[] args) {
+//         Counter c1 = new Counter();
+//         Counter c2 = new Counter();
+//         Counter c3 = new Counter();
+//         Counter c4 = new Counter();
 
 
-// In summary:
+//         System.out.println(Counter.count); // Access directly via class name
+//     }
+// }
+// // 3
+// // The count variable keeps track of all objects created, because it’s static.
 
-// Static variables are class-level variables, shared by all objects, with a single copy in memory.
+
+// // In summary:
+
+// // Static variables are class-level variables, shared by all objects, with a single copy in memory.
