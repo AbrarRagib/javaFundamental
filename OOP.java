@@ -1,3 +1,45 @@
+// 1. What is a Class?
+// A class is like a blueprint or recipe.
+// A class is a blueprint/template that defines how objects will look and behave.
+
+// It contains variables (attributes/properties) and methods (functions/behaviors).
+// Example: Think of a Car class. It defines what a car is: it has wheels, color, speed, and methods like drive, stop.
+
+
+
+// 2. What is an Object?
+
+// An object is a real instance of a class.
+
+// It’s like making a real cake from a recipe.
+// You can make many cakes (objects) from the same recipe (class).
+
+// You create objects using the new keyword.
+
+// Multiple objects can be created from the same class, and each object has its own data.
+//  Example:
+
+// Class = Car
+
+// Objects = car1 (red Honda), car2 (blue BMW).
+
+
+
+
+
+
+
+
+// 3. What is a Method?
+
+// A method is a block of code inside a class that performs some action.
+
+// It usually defines the behavior of an object.
+
+// Example: drive(), brake(), honk().
+
+
+
 // // 1. Encapsulation
 
 // //  Wrapping data (variables) and methods (functions) together into a single unit (class).
