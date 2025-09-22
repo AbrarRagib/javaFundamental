@@ -1,3 +1,4 @@
+package Fundamentals;
 // What is the Enhanced for Loop in Java?
 
 // The enhanced for loop (also called the for-each loop) is a simpler way to iterate over arrays or collections in Java, without needing an index counter.

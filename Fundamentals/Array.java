@@ -1,3 +1,4 @@
+package Fundamentals;
 // public class Array {
 //     public static void main(String a[])
 //     {

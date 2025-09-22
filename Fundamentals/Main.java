@@ -1,3 +1,4 @@
+package Fundamentals;
 class Dog {
     String name; // variable
 

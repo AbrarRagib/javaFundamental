@@ -1,3 +1,4 @@
+package Fundamentals;
 // Student.java
 // Example of Class, Constructor, Object, and Methods in Java
 

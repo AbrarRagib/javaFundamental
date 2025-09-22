@@ -1,3 +1,4 @@
+package Fundamentals;
 // Static Variables in Java
 
 // A static variable is a variable that belongs to the class, not to any specific object.

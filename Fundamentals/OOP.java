@@ -1,3 +1,4 @@
+package Fundamentals;
 // 1. What is a Class?
 // A class is like a blueprint or recipe.
 // A class is a blueprint/template that defines how objects will look and behave.
