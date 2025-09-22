@@ -150,9 +150,9 @@
 
 // // Types:
 
-// // Compile-time Polymorphism (Method Overloading) - Same method name, different parameters.
+// // Compile-time Polymorphism (Method Overloading) - Same method name, different parameters, inside the same class.
 
-// // Runtime Polymorphism (Method Overriding) - Subclass provides its own version of a parent method.
+// // Runtime Polymorphism (Method Overriding) - Subclass provides its own version of a parent method.Same method name, same parameters, but in parent-child (inheritance) relationship.
 
 
 
@@ -199,15 +199,92 @@
 
 
 
+//###
+// Polymorphism in Java: Overloading + Overriding
+
+// class Animal {
+//     // Method Overriding Example (will be overridden in subclasses)
+//     void sound() {
+//         System.out.println("Some generic animal sound");
+//     }
+
+//     // Method Overloading Example (different versions of 'eat')
+//     void eat() {
+//         System.out.println("Animal eats food");
+//     }
+
+//     void eat(String food) {  // Overloaded method
+//         System.out.println("Animal eats " + food);
+//     }
+
+//     void eat(String food, int times) {  // Another overload
+//         System.out.println("Animal eats " + food + " " + times + " times");
+//     }
+// }
+
+// class Cat extends Animal {
+//     @Override
+//     void sound() { // Overriding
+//         System.out.println("Meow Meow!");
+//     }
+// }
+
+// class Dog extends Animal {
+//     @Override
+//     void sound() { // Overriding
+//         System.out.println("Woof Woof!");
+//     }
+// }
+
+// public class Main {
+//     public static void main(String[] args) {
+//         // ---------- Method Overriding Example ----------
+//         Animal a1 = new Cat();  // runtime polymorphism
+//         Animal a2 = new Dog();
+
+//         a1.sound();  // Meow Meow!
+//         a2.sound();  // Woof Woof!
+
+//         // ---------- Method Overloading Example ----------
+//         Animal a3 = new Animal();
+//         a3.eat();                  // Animal eats food
+//         a3.eat("meat");            // Animal eats meat
+//         a3.eat("grass", 3);        // Animal eats grass 3 times
+//     }
+// }
+
+
+
+
+
+
+
+
 
 // // 4. Abstraction
+// Abstraction means hiding implementation details and showing only the essential features.
 
-// //  Hiding implementation details and showing only essential features.
-// //  Achieved using:
+// Focus on what an object does, not how it does it.
 
-// // Abstract classes (abstract keyword).
+// In Java, we achieve abstraction mainly in two ways:
 
-// // Interfaces (fully abstract by default, until Java 8+ allowed default methods).
+// 1. Abstract classes;
+
+// 2. Interfaces;
+
+// Real-Life Example of Abstraction
+
+// Think of a TV remote :
+
+// You only know what button does what (Volume up, Channel change).
+
+// You don’t know how internally the remote sends signals to the TV.
+
+// That’s abstraction → you interact with the functionality without worrying about the internal details.
+
+
+
+
 
 
 // abstract class Vehicle {
