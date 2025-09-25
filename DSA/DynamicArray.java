@@ -307,62 +307,83 @@
 
 
 
-// Implement Your Own Dynamic Array
+// // Implement Your Own Dynamic Array
 
 
-class MyDynamicArray {
-    private int[] arr;
-    private int size;
+// class MyDynamicArray {
+//     private int[] arr;
+//     private int size;
 
-    public MyDynamicArray() {
-        arr = new int[2];
-        size = 0;
-    }
+//     public MyDynamicArray() {
+//         arr = new int[2];
+//         size = 0;
+//     }
 
-    public void add(int value) {
-        if (size == arr.length) {
-            int[] newArr = new int[arr.length * 2];
-            for (int i = 0; i < arr.length; i++) {
-                newArr[i] = arr[i];
-            }
-            arr = newArr;
-        }
-        arr[size++] = value;
-    }
+//     public void add(int value) {
+//         if (size == arr.length) {
+//             int[] newArr = new int[arr.length * 2];
+//             for (int i = 0; i < arr.length; i++) {
+//                 newArr[i] = arr[i];
+//             }
+//             arr = newArr;
+//         }
+//         arr[size++] = value;
+//     }
 
-    public int get(int index) {
-        if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
-        return arr[index];
-    }
+//     public int get(int index) {
+//         if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
+//         return arr[index];
+//     }
 
-    public void set(int index, int value) {
-        if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
-        arr[index] = value;
-    }
+//     public void set(int index, int value) {
+//         if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
+//         arr[index] = value;
+//     }
 
-    public int size() {
-        return size;
-    }
-}
+//     public int size() {
+//         return size;
+//     }
+// }
+
+// public class DynamicArray {
+//     public static void main(String[] args) {
+//         MyDynamicArray myArr = new MyDynamicArray();
+//         myArr.add(10);
+//         myArr.add(20);
+//         myArr.add(30);
+
+//         System.out.println("Size: " + myArr.size());
+//         System.out.println("Element at index 1: " + myArr.get(1));
+//         myArr.set(1, 99);
+//         System.out.println("Updated index 1: " + myArr.get(1));
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// Insert 1–10, remove even numbers
+
+import java.util.ArrayList;
 
 public class DynamicArray {
     public static void main(String[] args) {
-        MyDynamicArray myArr = new MyDynamicArray();
-        myArr.add(10);
-        myArr.add(20);
-        myArr.add(30);
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 1; i <= 10; i++) list.add(i);
 
-        System.out.println("Size: " + myArr.size());
-        System.out.println("Element at index 1: " + myArr.get(1));
-        myArr.set(1, 99);
-        System.out.println("Updated index 1: " + myArr.get(1));
+        list.removeIf(n -> n % 2 == 0); // remove evens
+
+        System.out.println("After removing evens: " + list);
     }
 }
-
-
-
-
-
 
 
 
