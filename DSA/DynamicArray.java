@@ -198,7 +198,72 @@
 
 
 
-// Key Operations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Key Operations
+
+// import java.util.ArrayList;
+
+// public class DynamicArray {
+//     public static void main(String[] args) {
+//         ArrayList<Integer> list = new ArrayList<>();
+
+//         // Add elements
+//         list.add(10);
+//         list.add(20);
+//         list.add(30);
+
+//         // Insert at index
+//         list.add(1, 99);
+
+//         // Access by index
+//         System.out.println("Element at index 2: " + list.get(2));
+
+//         // Update value
+//         list.set(0, 100);
+
+//         // Remove element at index 0
+//         list.remove(0);
+
+//         // Get size
+//         System.out.println("Final List: " + list);
+//         System.out.println("Size: " + list.size());
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+// Complexity Analysis
+
+/*
+Access by index -> O(1)
+Update by index -> O(1)
+Insert at end   -> O(1) amortized
+Insert/remove middle -> O(n) (shift elements)
+Search -> O(n) (linear search)
+*/
+
 
 import java.util.ArrayList;
 
@@ -206,35 +271,26 @@ public class DynamicArray {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
 
-        // Add elements
-        list.add(10);
-        list.add(20);
-        list.add(30);
+        // Insert O(1) amortized
+        for (int i = 0; i < 5; i++) {
+            list.add(i);
+        }
 
-        // Insert at index
-        list.add(1, 99);
+        // Access O(1)
+        System.out.println("Access index 3: " + list.get(3));
 
-        // Access by index
-        System.out.println("Element at index 2: " + list.get(2));
+        // Update O(1)
+        list.set(2, 99);
 
-        // Update value
-        list.set(0, 100);
+        // Remove O(n)
+        list.remove(1);
 
-        // Remove element at index 0
-        list.remove(0);
+        // Search O(n)
+        boolean found = list.contains(99);
 
-        // Get size
-        System.out.println("Final List: " + list);
-        System.out.println("Size: " + list.size());
+        System.out.println("List: " + list + " Found 99? " + found);
     }
 }
-
-
-
-
-
-
-
 
 
 
