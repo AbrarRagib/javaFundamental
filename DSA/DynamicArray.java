@@ -254,48 +254,110 @@
 
 
 
-// Complexity Analysis
+// // Complexity Analysis
 
-/*
-Access by index -> O(1)
-Update by index -> O(1)
-Insert at end   -> O(1) amortized
-Insert/remove middle -> O(n) (shift elements)
-Search -> O(n) (linear search)
-*/
+// /*
+// Access by index -> O(1)
+// Update by index -> O(1)
+// Insert at end   -> O(1) amortized
+// Insert/remove middle -> O(n) (shift elements)
+// Search -> O(n) (linear search)
+// */
 
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
 
-public class DynamicArray {
-    public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>();
+// public class DynamicArray {
+//     public static void main(String[] args) {
+//         ArrayList<Integer> list = new ArrayList<>();
 
-        // Insert O(1) amortized
-        for (int i = 0; i < 5; i++) {
-            list.add(i);
+//         // Insert O(1) amortized
+//         for (int i = 0; i < 5; i++) {
+//             list.add(i);
+//         }
+
+//         // Access O(1)
+//         System.out.println("Access index 3: " + list.get(3));
+
+//         // Update O(1)
+//         list.set(2, 99);
+
+//         // Remove O(n)
+//         list.remove(1);
+
+//         // Search O(n)
+//         boolean found = list.contains(99);
+
+//         System.out.println("List: " + list + " Found 99? " + found);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Implement Your Own Dynamic Array
+
+
+class MyDynamicArray {
+    private int[] arr;
+    private int size;
+
+    public MyDynamicArray() {
+        arr = new int[2];
+        size = 0;
+    }
+
+    public void add(int value) {
+        if (size == arr.length) {
+            int[] newArr = new int[arr.length * 2];
+            for (int i = 0; i < arr.length; i++) {
+                newArr[i] = arr[i];
+            }
+            arr = newArr;
         }
+        arr[size++] = value;
+    }
 
-        // Access O(1)
-        System.out.println("Access index 3: " + list.get(3));
+    public int get(int index) {
+        if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
+        return arr[index];
+    }
 
-        // Update O(1)
-        list.set(2, 99);
+    public void set(int index, int value) {
+        if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
+        arr[index] = value;
+    }
 
-        // Remove O(n)
-        list.remove(1);
-
-        // Search O(n)
-        boolean found = list.contains(99);
-
-        System.out.println("List: " + list + " Found 99? " + found);
+    public int size() {
+        return size;
     }
 }
 
+public class DynamicArray {
+    public static void main(String[] args) {
+        MyDynamicArray myArr = new MyDynamicArray();
+        myArr.add(10);
+        myArr.add(20);
+        myArr.add(30);
 
-
-
-
+        System.out.println("Size: " + myArr.size());
+        System.out.println("Element at index 1: " + myArr.get(1));
+        myArr.set(1, 99);
+        System.out.println("Updated index 1: " + myArr.get(1));
+    }
+}
 
 
 
