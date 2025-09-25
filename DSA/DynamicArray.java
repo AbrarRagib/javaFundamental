@@ -440,39 +440,78 @@
 
 
 
+// import java.util.ArrayList;
+// import java.util.Collections;
+
+// public class DynamicArray {
+//     // Linear search
+//     public static int linearSearch(ArrayList<Integer> list, int key) {
+//         for (int i = 0; i < list.size(); i++) {
+//             if (list.get(i) == key) return i;
+//         }
+//         return -1;
+//     }
+
+//     // Binary search (list must be sorted)
+//     public static int binarySearch(ArrayList<Integer> list, int key) {
+//         int low = 0, high = list.size() - 1;
+//         while (low <= high) {
+//             int mid = (low + high) / 2;
+//             if (list.get(mid) == key) return mid;
+//             else if (list.get(mid) < key) low = mid + 1;
+//             else high = mid - 1;
+//         }
+//         return -1;
+//     }
+
+//     public static void main(String[] args) {
+//         ArrayList<Integer> list = new ArrayList<>();
+//         Collections.addAll(list, 1, 3, 5, 7, 9);
+
+//         System.out.println("Linear Search for 5: " + linearSearch(list, 5));
+//         System.out.println("Binary Search for 7: " + binarySearch(list, 7));
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ArrayList as Stack & Queue
+
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class DynamicArray {
-    // Linear search
-    public static int linearSearch(ArrayList<Integer> list, int key) {
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) == key) return i;
-        }
-        return -1;
-    }
-
-    // Binary search (list must be sorted)
-    public static int binarySearch(ArrayList<Integer> list, int key) {
-        int low = 0, high = list.size() - 1;
-        while (low <= high) {
-            int mid = (low + high) / 2;
-            if (list.get(mid) == key) return mid;
-            else if (list.get(mid) < key) low = mid + 1;
-            else high = mid - 1;
-        }
-        return -1;
-    }
-
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>();
-        Collections.addAll(list, 1, 3, 5, 7, 9);
+        ArrayList<Integer> stack = new ArrayList<>();
+        ArrayList<Integer> queue = new ArrayList<>();
 
-        System.out.println("Linear Search for 5: " + linearSearch(list, 5));
-        System.out.println("Binary Search for 7: " + binarySearch(list, 7));
+        // Stack (LIFO)
+        stack.add(10);
+        stack.add(20);
+        stack.add(30);
+        System.out.println("Stack pop: " + stack.remove(stack.size() - 1));
+
+        // Queue (FIFO)
+        queue.add(1);
+        queue.add(2);
+        queue.add(3);
+        System.out.println("Queue poll: " + queue.remove(0));
     }
 }
-
 
 
 
