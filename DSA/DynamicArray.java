@@ -131,3 +131,72 @@
 // } {
     
 // }
+
+
+
+
+
+
+// Difference between Java array and dynamic array (ArrayList)
+
+// import java.util.ArrayList;
+
+// public class DynamicArray {
+//     public static void main(String[] args) {
+//         // Normal array
+//         int[] fixedArray = new int[3];
+//         fixedArray[0] = 10;
+//         fixedArray[1] = 20;
+//         fixedArray[2] = 30;
+//         // fixedArray[3] = 40; // ❌ Error: size is fixed
+
+//         // Dynamic array using ArrayList
+//         ArrayList<Integer> dynamicArray = new ArrayList<>();
+//         dynamicArray.add(10);
+//         dynamicArray.add(20);
+//         dynamicArray.add(30);
+//         dynamicArray.add(40); // ✅ grows automatically
+
+//         System.out.println("Fixed Array length: " + fixedArray.length);
+//         System.out.println("Dynamic Array size: " + dynamicArray.size());
+
+
+
+
+//     }
+// }
+
+
+
+
+
+
+
+// How ArrayList grows internally
+
+import java.util.ArrayList;
+
+public class DynamicArray {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>(2); // start with capacity 2
+        list.add(1);
+        list.add(2);
+
+        System.out.println("Before capacity increase: " + list);
+
+        // ensureCapacity() expands backing array if needed
+        list.ensureCapacity(5);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+        System.out.println("After capacity increase: " + list);
+    }
+}
+
+
+
+
+
+
+
