@@ -370,18 +370,49 @@
 
 
 
-// Insert 1–10, remove even numbers
+// // Insert 1–10, remove even numbers
+
+// import java.util.ArrayList;
+
+// public class DynamicArray {
+//     public static void main(String[] args) {
+//         ArrayList<Integer> list = new ArrayList<>();
+//         for (int i = 1; i <= 10; i++) list.add(i);
+
+//         list.removeIf(n -> n % 2 == 0); // remove evens
+
+//         System.out.println("After removing evens: " + list);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Reverse ArrayList without Collections.reverse()
 
 import java.util.ArrayList;
 
 public class DynamicArray {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 1; i <= 10; i++) list.add(i);
+        for (int i = 1; i <= 5; i++) list.add(i);
 
-        list.removeIf(n -> n % 2 == 0); // remove evens
+        for (int i = 0, j = list.size() - 1; i < j; i++, j--) {
+            int temp = list.get(i);
+            list.set(i, list.get(j));
+            list.set(j, temp);
+        }
 
-        System.out.println("After removing evens: " + list);
+        System.out.println("Reversed List: " + list);
     }
 }
 
