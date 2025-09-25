@@ -172,27 +172,75 @@
 
 
 
-// How ArrayList grows internally
+// // How ArrayList grows internally
+
+// import java.util.ArrayList;
+
+// public class DynamicArray {
+//     public static void main(String[] args) {
+//         ArrayList<Integer> list = new ArrayList<>(2); // start with capacity 2
+//         list.add(1);
+//         list.add(2);
+
+//         System.out.println("Before capacity increase: " + list);
+
+//         // ensureCapacity() expands backing array if needed
+//         list.ensureCapacity(5);
+//         list.add(3);
+//         list.add(4);
+//         list.add(5);
+
+//         System.out.println("After capacity increase: " + list);
+//     }
+// }
+
+
+
+
+
+// Key Operations
 
 import java.util.ArrayList;
 
 public class DynamicArray {
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>(2); // start with capacity 2
-        list.add(1);
-        list.add(2);
+        ArrayList<Integer> list = new ArrayList<>();
 
-        System.out.println("Before capacity increase: " + list);
+        // Add elements
+        list.add(10);
+        list.add(20);
+        list.add(30);
 
-        // ensureCapacity() expands backing array if needed
-        list.ensureCapacity(5);
-        list.add(3);
-        list.add(4);
-        list.add(5);
+        // Insert at index
+        list.add(1, 99);
 
-        System.out.println("After capacity increase: " + list);
+        // Access by index
+        System.out.println("Element at index 2: " + list.get(2));
+
+        // Update value
+        list.set(0, 100);
+
+        // Remove element at index 0
+        list.remove(0);
+
+        // Get size
+        System.out.println("Final List: " + list);
+        System.out.println("Size: " + list.size());
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
