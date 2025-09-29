@@ -1,4 +1,4 @@
-public class InsertionSort{
+public class InsertionSortDemo{
 	
 	// Insertion sort = after comparing elements to the left,
 	//				shift elements to the right to make room to insert a value
