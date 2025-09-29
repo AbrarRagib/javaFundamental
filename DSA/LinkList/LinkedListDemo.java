@@ -178,77 +178,77 @@
 
 
 // // Node class for Doubly Linked List
-// class DNode {
-//     int data;
-//     DNode prev, next;
+class DNode {
+    int data;
+    DNode prev, next;
 
-//     DNode(int data) {
-//         this.data = data;
-//         this.prev = null;
-//         this.next = null;
-//     }
-// }
+    DNode(int data) {
+        this.data = data;
+        this.prev = null;
+        this.next = null;
+    }
+}
 
-// // Doubly Linked List implementation
-// class DoublyLinkedList {
-//     DNode head;
+// Doubly Linked List implementation
+class DoublyLinkedList {
+    DNode head;
 
-//     // Insert at end
-//     public void insert(int data) {
-//         DNode newNode = new DNode(data);
-//         if (head == null) {
-//             head = newNode;
-//             return;
-//         }
-//         DNode temp = head;
-//         while (temp.next != null) {
-//             temp = temp.next;
-//         }
-//         temp.next = newNode;
-//         newNode.prev = temp;
-//     }
+    // Insert at end
+    public void insert(int data) {
+        DNode newNode = new DNode(data);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+        DNode temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        temp.next = newNode;
+        newNode.prev = temp;
+    }
 
-//     // Display forward
-//     public void displayForward() {
-//         DNode temp = head;
-//         while (temp != null) {
-//             System.out.print(temp.data + " <-> ");
-//             temp = temp.next;
-//         }
-//         System.out.println("null");
-//     }
+    // Display forward
+    public void displayForward() {
+        DNode temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " <-> ");
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
 
-//     // Display backward
-//     public void displayBackward() {
-//         DNode temp = head;
-//         if (temp == null) return;
+    // Display backward
+    public void displayBackward() {
+        DNode temp = head;
+        if (temp == null) return;
 
-//         // Move to last node
-//         while (temp.next != null) {
-//             temp = temp.next;
-//         }
+        // Move to last node
+        while (temp.next != null) {
+            temp = temp.next;
+        }
 
-//         // Traverse backward
-//         while (temp != null) {
-//             System.out.print(temp.data + " <-> ");
-//             temp = temp.prev;
-//         }
-//         System.out.println("null");
-//     }
-// }
+        // Traverse backward
+        while (temp != null) {
+            System.out.print(temp.data + " <-> ");
+            temp = temp.prev;
+        }
+        System.out.println("null");
+    }
+}
 
-// // Test
-// public class LinkedListDemo {
-//     public static void main(String[] args) {
-//         DoublyLinkedList dll = new DoublyLinkedList();
-//         dll.insert(10);
-//         dll.insert(20);
-//         dll.insert(30);
+// Test
+public class LinkedListDemo {
+    public static void main(String[] args) {
+        DoublyLinkedList dll = new DoublyLinkedList();
+        dll.insert(10);
+        dll.insert(20);
+        dll.insert(30);
 
-//         System.out.print("Forward: ");
-//         dll.displayForward();
+        System.out.print("Forward: ");
+        dll.displayForward();
 
-//         System.out.print("Backward: ");
-//         dll.displayBackward();
-//     }
-// }
+        System.out.print("Backward: ");
+        dll.displayBackward();
+    }
+}
