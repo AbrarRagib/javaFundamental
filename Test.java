@@ -54,24 +54,24 @@
 // }
 
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
 
-public class Test{
-    public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 1; i <= 5; i++) list.add(i);
-        System.out.println("Original List: " + list);
+// public class Test{
+//     public static void main(String[] args) {
+//         ArrayList<Integer> list = new ArrayList<>();
+//         for (int i = 1; i <= 5; i++) list.add(i);
+//         System.out.println("Original List: " + list);
 
-        for (int i =  0, j = list.size() - 1; i < j; i++, j--) {
-            int temp = list.get(i);
-            list.set(i, list.get(j));
-            list.set(j, temp);
-        }
-        System.out.println("Reversed List: " + list);
+//         for (int i =  0, j = list.size() - 1; i < j; i++, j--) {
+//             int temp = list.get(i);
+//             list.set(i, list.get(j));
+//             list.set(j, temp);
+//         }
+//         System.out.println("Reversed List: " + list);
         
-        // System.out.println("Original List: " + list.size()  );
-    }
-}
+//         // System.out.println("Original List: " + list.size()  );
+//     }
+// }
 
 
 
