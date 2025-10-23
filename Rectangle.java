@@ -1,4 +1,4 @@
-// package com.example.geometry; // 👈 COMMENT OUT THIS LINE
+// package com.example.geometry; //
 
 import java.lang.Math;      // 2. Imports
 
