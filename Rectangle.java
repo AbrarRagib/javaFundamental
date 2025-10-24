@@ -33,3 +33,5 @@ public class Rectangle {    // 3. Class Declaration
         System.out.println("Area: " + rect.calculateArea());
     }
 }
+
+//TEST`
