@@ -34,4 +34,3 @@ public class Rectangle {    // 3. Class Declaration
     }
 }
 
-//TEST`
